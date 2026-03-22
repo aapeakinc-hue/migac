@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MIGAC - Professional Crystal Candelabra and Craft Manufacturer from China. Factory direct wholesale prices for crystal candle holders, wedding decorations, and luxury crystal crafts.">
+    <meta name="keywords" content="crystal candelabra, crystal candle holder, wedding decoration, crystal crafts, wholesale crystal, factory direct, MIGAC, Yiwu Bangye Handicraft Factory">
+    <meta name="author" content="MIGAC">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="MIGAC - Crystal Candelabra & Craft Manufacturer | Factory Direct">
+    <meta property="og:description" content="Premium crystal candelabras and crafts at factory direct prices. Professional manufacturer for wedding, event, and home decoration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.miga.cc">
+    <meta property="og:image" content="https://www.miga.cc/miga_product_images_800x800/5armscandelabra.jpg">
+    
+    <title>MIGAC | Crystal Candelabra & Craft Manufacturer - Factory Direct</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+    
+    <!-- CSS Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            list-style: none;
+        }
+        
+        .nav-menu a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: #2a5298;
+            border-bottom-color: #2a5298;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('miga_product_images_800x800/color5armscandelabra.jpg') center/cover;
+            color: #fff;
+            padding: 5rem 2rem;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .hero-cta:hover {
+            background: #e05e5e;
+            transform: translateY(-2px);
+        }
+        
+        /* Products Section */
+        .products-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .product-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #1e3c72;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 280px;
+            background: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-info h3 {
+            font-size: 1.1rem;
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .product-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .product-price {
+            color: #ff6b6b;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .product-cta {
+            display: block;
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 0.8rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .product-cta:hover {
+            background: #2a5298;
+        }
+        
+        .view-all {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .view-all a {
+            display: inline-block;
+            background: #1e3c72;
+            color: #fff;
+            padding: 1rem 3rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .view-all a:hover {
+            background: #2a5298;
+            transform: translateY(-2px);
+        }
+        
+        /* Why Choose Us */
+        .why-choose {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+        }
+        
+        .why-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            color: #1e3c72;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-card {
+            background: #1e3c72;
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 4rem 2rem;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-details {
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-item a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-cta {
+            background: #ff6b6b;
+            color: #fff;
+            padding: 1.5rem 3rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .contact-cta:hover {
+            background: #e05e5e;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 3px solid #ff6b6b;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .footer-content p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links {
+            margin-top: 1rem;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.85rem;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="MIGAC Logo">
+                <div>
+                    <h1>MIGAC</h1>
+                    <span>Crystal Candelabra & Craft Manufacturer</span>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:info@miga.cc">✉ info@miga.cc</a>
+                <a href="tel:+86-19879476613">📞 +86-19879476613</a>
+                <a href="https://wa.me/8619879476613">💬 WhatsApp: +86-19879476613</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Premium Crystal Candelabras & Crafts</h2>
+            <p>Factory Direct Prices | Wholesale | Custom Orders Welcome</p>
+            <a href="products.html" class="hero-cta">View Our Collection</a>
+        </div>
+    </section>
+    
+    <!-- Featured Products -->
+    <section class="products-section">
+        <div class="section-title">
+            <h2>Featured Products</h2>
+            <p>Explore our exclusive collection of crystal candelabras and crafts</p>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/5armscandelabra.jpg" alt="Five-Arm Crystal Candelabra">
+                </div>
+                <div class="product-info">
+                    <h3>Five-Arm Crystal Candelabra</h3>
+                    <p>Elegant five-arm crystal candelabra with exquisite faceted design. Perfect for weddings and formal events.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/9armscandelabra.jpg" alt="Nine-Arm Crystal Candelabra">
+                </div>
+                <div class="product-info">
+                    <h3>Nine-Arm Crystal Candelabra</h3>
+                    <p>Magnificent nine-arm crystal candelabra with multi-level design. Ideal for grand weddings and luxury events.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/color5armscandelabra.jpg" alt="Colorful Five-Arm Crystal Candelabra">
+                </div>
+                <div class="product-info">
+                    <h3>Colorful Five-Arm Crystal Candelabra</h3>
+                    <p>Elegant candelabra with gradient color candle cups. Deep blue base with rose pink transitions.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/crystal_floral_arrangement.jpg" alt="Crystal Floral Arrangement">
+                </div>
+                <div class="product-info">
+                    <h3>Crystal Floral Arrangement</h3>
+                    <p>Exquisite crystal floral arrangement with hydrangea and coral flowers. Perfect for luxury decor.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all">
+            <a href="products.html">View All Products →</a>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="why-container">
+            <div class="section-title">
+                <h2>Why Choose MIGAC?</h2>
+                <p>Your trusted partner for premium crystal products</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Factory Direct Prices</h3>
+                    <p>No middlemen, competitive wholesale prices directly from the manufacturer</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Premium Quality</h3>
+                    <p>K9 crystal with expert craftsmanship, ISO certified production</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom Orders</h3>
+                    <p>OEM/ODM services available, flexible customization for bulk orders</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fast Shipping</h3>
+                    <p>Efficient logistics, timely delivery worldwide from Yiwu, China</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Us -->
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Yiwu Bangye Handicraft Factory</h2>
+                <p>MIGAC is a professional manufacturer of crystal candelabras and crafts located in Yiwu, Zhejiang Province, China. With years of experience in the industry, we specialize in producing high-quality crystal products for weddings, events, home decoration, and luxury gifts.</p>
+                <p>Our factory is equipped with advanced production facilities and skilled craftsmen, ensuring every product meets international quality standards. We offer factory direct prices, custom designs, and reliable services to clients worldwide.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">16+</div>
+                        <div class="stat-label">Product Categories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Us Today</h2>
+                    <p>Get in touch for wholesale inquiries, custom orders, or partnership opportunities</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <a href="mailto:info@miga.cc">✉ Email: info@miga.cc</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="tel:+86-19879476613">📞 Phone: +86-19879476613</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://wa.me/8619879476613">💬 WhatsApp: +86-19879476613</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍 Address: L.38, Chengbei Rd., Houzhai, Yiwu City, Zhejiang Pr., China</span>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="contact-cta">Send Inquiry Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Yiwu Bangye Handicraft Factory. All Rights Reserved.</p>
+            <p>MIGAC - Professional Crystal Candelabra & Craft Manufacturer</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

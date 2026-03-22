@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MIGAC - Complete collection of crystal candelabras and crystal crafts. Browse our 16 premium products including multi-arm candelabras, candle holders, and decorative crystal pieces. Factory direct prices.">
+    <meta name="keywords" content="crystal candelabra, crystal candle holder, crystal crafts, wedding decoration, wholesale crystal, MIGAC products, crystal centerpiece, luxury crystal decor">
+    <meta name="author" content="MIGAC">
+    <meta name="robots" content="index, follow">
+    
+    <title>Products | MIGAC - Crystal Candelabra & Craft Collection</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+    
+    <!-- CSS Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            list-style: none;
+        }
+        
+        .nav-menu a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: #2a5298;
+            border-bottom-color: #2a5298;
+        }
+        
+        .nav-menu a.active {
+            border-bottom-color: #1e3c72;
+        }
+        
+        /* Page Title */
+        .page-title {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .page-title h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .page-title p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Filter Section */
+        .filter-section {
+            padding: 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: #fff;
+            color: #1e3c72;
+            border: 2px solid #1e3c72;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: #1e3c72;
+            color: #fff;
+        }
+        
+        /* Products Section */
+        .products-section {
+            padding: 2rem 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #1e3c72;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 280px;
+            background: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-category {
+            color: #ff6b6b;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-info h3 {
+            font-size: 1.1rem;
+            color: #1e3c72;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        .product-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .product-price {
+            color: #ff6b6b;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .product-cta {
+            display: block;
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 0.8rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .product-cta:hover {
+            background: #2a5298;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 1rem 3rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #e05e5e;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 3px solid #ff6b6b;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .footer-content p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links {
+            margin-top: 1rem;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.85rem;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-buttons {
+                gap: 0.5rem;
+            }
+            
+            .filter-btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="MIGAC Logo">
+                <div>
+                    <h1>MIGAC</h1>
+                    <span>Crystal Candelabra & Craft Manufacturer</span>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:info@miga.cc">✉ info@miga.cc</a>
+                <a href="tel:+86-19879476613">📞 +86-19879476613</a>
+                <a href="https://wa.me/8619879476613">💬 WhatsApp: +86-19879476613</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Page Title -->
+    <div class="page-title">
+        <h1>Our Products</h1>
+        <p>Premium Crystal Candelabras & Crafts - Factory Direct Prices</p>
+    </div>
+    
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">All Products (16)</button>
+            <button class="filter-btn" onclick="filterProducts('candelabra')">Candelabras (10)</button>
+            <button class="filter-btn" onclick="filterProducts('craft')">Crystal Crafts (6)</button>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-grid">
+            <!-- Candelabras -->
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/5armscandelabra.jpg" alt="Five-Arm Crystal Candelabra">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Five-Arm Crystal Candelabra</h3>
+                    <p>Elegant five-arm crystal candelabra with exquisite faceted design. Features high-quality crystal construction with multiple curved arms and candle cups. Perfect for weddings, formal events, and luxury home decor.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/5armscandelabras.jpg" alt="Five-Arm Crystal Candelabra Set">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Five-Arm Crystal Candelabra Set</h3>
+                    <p>Beautiful set of five-arm crystal candelabras with transparent faceted construction. Features elegant curved arms and candle trays. Ideal for weddings and upscale events with high-quality crystal.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/9armscandelabra.jpg" alt="Nine-Arm Crystal Candelabra">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Nine-Arm Crystal Candelabra</h3>
+                    <p>Magnificent nine-arm crystal candelabra with multi-level design. Features transparent glass construction with elegant curved branches. Perfect for grand weddings and formal events with crystal droplets.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/9armscandelabras.jpg" alt="Nine-Arm Crystal Candelabra Set">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Nine-Arm Crystal Candelabra Set</h3>
+                    <p>Elegant nine-arm crystal candelabra set with luxurious design. Features crystal droplets and refined construction. Perfect for luxury weddings and grand events with exquisite craftsmanship.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/9candlestickscandelabra.jpg" alt="Nine-Candlestick Crystal Candelabra">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Nine-Candlestick Crystal Candelabra</h3>
+                    <p>Modern nine-candlestick candelabra with glass construction. Features candle glass shades and multiple arms. Contemporary design perfect for upscale home decor and events with elegant transparent aesthetic.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/candleholder.jpg" alt="Crystal Candle Holder Set">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Crystal Candle Holder Set</h3>
+                    <p>Elegant set of crystal candle holders with faceted design. Features square base and cylindrical construction. Available in multiple heights for dynamic display. Perfect for home decor and special occasions.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/candlestand.jpg" alt="Crystal Candle Stand Set">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Crystal Candle Stand Set</h3>
+                    <p>Sophisticated crystal candle stand set with reflective base. Features transparent crystal tray for candle placement. Modern minimalist design ideal for upscale home decor with premium quality elegant finish.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/candlestandholder.jpg" alt="Crystal Candle Stand Holder">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Crystal Candle Stand Holder</h3>
+                    <p>Elegant crystal candle stand holder with glass shades. Features three-piece set with candle glass covers. Perfect for romantic occasions and special events with classic transparent design and warm lighting.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/candlestick.jpg" alt="Crystal Candlestick Collection">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Crystal Candlestick Collection</h3>
+                    <p>Premium crystal candlestick collection with faceted design. Features seven different heights for dramatic display. Sophisticated construction with decorative spheres. Perfect for luxury events and upscale decor.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="candelabra">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/color5armscandelabra.jpg" alt="Colorful Five-Arm Crystal Candelabra">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Candelabra</div>
+                    <h3>Colorful Five-Arm Crystal Candelabra</h3>
+                    <p>Elegant five-arm crystal candelabra with gradient color candle cups. Features deep blue base, golden metal column, and five curved crystal arms. Candle cups transition from transparent to rose pink. Stunning for luxury events.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <!-- Crystal Crafts -->
+            <div class="product-card" data-category="craft">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/crystal_floral_arrangement.jpg" alt="Crystal Floral Arrangement">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Crystal Craft</div>
+                    <h3>Crystal Floral Arrangement</h3>
+                    <p>Exquisite crystal floral arrangement with white hydrangea and orange coral flowers. Features square crystal vase with faceted design. Perfect for luxury weddings, upscale events, and premium home decoration.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="craft">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/crystal_puppy_pair.jpg" alt="Crystal Puppy Pair">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Crystal Craft</div>
+                    <h3>Crystal Puppy Pair</h3>
+                    <p>Adorable pair of crystal puppy sculptures with faceted design. Features two playful puppies in sitting pose. Perfect for animal lovers, luxury gifts, and distinctive home decor with exceptional crystal craftsmanship.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="craft">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/crystal_vase_pair.jpg" alt="Crystal Vase Pair">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Crystal Craft</div>
+                    <h3>Crystal Vase Pair</h3>
+                    <p>Elegant pair of crystal vases with geometric faceted design. Features one tall blue-gray vase and one amber bowl vase. Perfect for luxury table settings, wedding centerpieces, and upscale home decoration.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="craft">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/crystal_decor_table.jpg" alt="Crystal Decor Table">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Crystal Craft</div>
+                    <h3>Crystal Decor Table</h3>
+                    <p>Luxury crystal decor table with black glass top. Features pink and amber faceted crystal pillars. Perfect for luxury events, upscale hotels, and premium home decoration with sophisticated contemporary design.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="craft">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/crystal_monument_collection.jpg" alt="Crystal Monument Collection">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Crystal Craft</div>
+                    <h3>Crystal Monument Collection</h3>
+                    <p>Premium collection of crystal monuments with pyramidal design. Features multiple styles with faceted crystal construction and decorative elements. Perfect for awards, commemorative gifts, and luxury corporate decor.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="craft">
+                <div class="product-image">
+                    <img src="miga_product_images_800x800/crystal_glass_table.jpg" alt="Crystal Glass Table">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Crystal Craft</div>
+                    <h3>Crystal Glass Table</h3>
+                    <p>Modern crystal glass table with transparent acrylic legs. Features rectangular glass top with sleek minimalist design. Perfect for upscale offices, luxury homes, and contemporary spaces with elegant transparency.</p>
+                    <div class="product-price">Factory Direct</div>
+                    <a href="contact.html" class="product-cta">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Interested in Our Products?</h2>
+            <p>Contact us today for wholesale prices, custom orders, and partnership opportunities</p>
+            <a href="contact.html" class="cta-button">Get Free Quote Now</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Yiwu Bangye Handicraft Factory. All Rights Reserved.</p>
+            <p>MIGAC - Professional Crystal Candelabra & Craft Manufacturer</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Filter Functionality -->
+    <script>
+        function filterProducts(category) {
+            const products = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter products
+            products.forEach(product => {
+                if (category === 'all') {
+                    product.style.display = 'block';
+                } else {
+                    const productCategory = product.getAttribute('data-category');
+                    if (productCategory === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
